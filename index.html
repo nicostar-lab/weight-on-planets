@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculateur de poids</title>
+    <link rel="stylesheet" href="src\css\output.css" />
+    <link rel="shortcut icon" href="/src/asset/profile.jpg" type="image/x-icon">
+  </head>
+  <body>
+    <video
+      src="/src/asset/video.mp4"
+      autoplay
+      loop
+      muted
+      class="absolute -z-10 h-screen w-full object-cover"
+    ></video>
+    <main class="flex flex-col justify-center items-center h-screen">
+      <h1 class="font-bold text-6xl text-center text-white">
+        Calcule le poids d'un objet sur une planète
+      </h1>
+      <div
+        class="backdrop-blur-[15px] w-[80%] h-[80%] rounded-[20px] mt-[50px] bg-[rgba(0,0,0,0.2)] pt-[50px] px-[20px] "
+      >
+        <div class="flex flex-col gap-5">
+          <div class="mx-auto text-white flex gap-5 items-center">
+            <input
+              id="masse"
+              type="text"
+              placeholder="Masse de l'objet (kg)"
+              required
+              class="bg-[rgba(255,255,255,0.3)] backdrop-blur-xl rounded-2xl h-[30px] w-[250px] px-[20px] py-[10px]"
+            />
+            <select id="select" class="bg-black w-[200px] rounded-2xl p-[7px]">
+              <option value="Mercure">Mercure</option>
+              <option value="Vénus">Vénus</option>
+              <option value="Terre">Terre</option>
+              <option value="Mars">Mars</option>
+              <option value="Jupiter">Jupiter</option>
+              <option value="Saturne">Saturne</option>
+              <option value="Uranus">Uranus</option>
+              <option value="Neptune">Neptune</option>
+            </select>
+            <button id="btn" class="bg-blue-950 py-[7px] px-[30px] rounded-3xl">
+              VALIDER
+            </button>
+          </div>
+          <div class="flex items-center justify-around">
+            <img src="/src/asset/terre.png" alt="planète" />
+            <div
+              class="text-white text-2xl font-semibold flex flex-col items-center"
+            >
+              <p>
+                le poids de cet objet sur
+                <span id="name" class="font-bold">terre</span>
+              </p>
+              <div
+                id="result"
+                class="w-[200px] h-[150px] rounded-[20px] bg-[rgba(0,0,0,0.3)] mt-5 font-bold backdrop-blur-2xl flex items-center justify-center text-3xl"
+              ></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="main.js"></script>
+  </body>
+</html>
