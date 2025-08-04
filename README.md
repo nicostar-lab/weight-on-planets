@@ -49,4 +49,4 @@ Tu peux proposer des améliorations de code, corriger des bugs ou ajouter de nou
 
 
 ## 👨‍💻 Auteur
-Développé par ![nicostar-lab]
+Développé par [nicostar-lab](https://github.com/nicostar-lab)
